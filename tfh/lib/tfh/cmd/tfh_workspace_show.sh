@@ -48,5 +48,6 @@ tfh_workspace_show () {
     "locked            = " + (.data.attributes.locked|tostring),
     "created-at        = " + .data.attributes."created-at",
     "working-directory = " + .data.attributes."working-directory",
+    "vcs-repo-branch   = " + .data.attributes."vcs-repo".branch,
     "terraform-version = " + .data.attributes."terraform-version"'
 }
